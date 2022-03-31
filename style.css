@@ -20,10 +20,10 @@ p {
   font-size: 1rem;
 }
 
-body > header {
+/* body > header {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 body > header nav a {
   padding: 0.5em 0.8em;
@@ -66,6 +66,10 @@ body > header nav li {
 .no-bullets a {
   text-decoration: none;
   color: black;
+}
+
+.desktop-only {
+  display: none;
 }
 
 #banner {
@@ -124,4 +128,18 @@ body > footer {
 
 .footer-menu a:hover {
   text-shadow: 0 0 .65px #303030, 0 0 .65px #303030;
+}
+
+.accordion h3:before
+
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: hidden;
+}
+
+body > footer {
+  font-size: ;
 }

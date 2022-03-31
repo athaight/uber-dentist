@@ -9,31 +9,33 @@
     <style>
 
       main {
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-between; */
         padding: 0 1em;
       }
 
-      h1 {
+      /* h1 {
         flex-basis: 98%;
-      }
+      } */
 
       article  {
-        flex-basis: 48%;
+        /* flex-basis: 48%; */
         border: 3px solid #2483d6;
         padding: 1em;
         margin-bottom: 3em;
         border-radius: 5px;
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-between; */
       }
 
       article > div {
+         /*
         flex-basis: 48%;
+        */
         overflow: hidden;
-      }
+      } 
 
       
       article > img {
@@ -55,10 +57,10 @@
         flex-basis: 100%;
       }
 
-      article > h2 {
+      /* article > h2 {
         margin-top: 0%;
-        line-height: .7;
-      }
+        line-height: 0.7;
+      } */
 
       /* #bunnyWrapper {
         align-self: flex-start;
@@ -68,6 +70,47 @@
         margin-top: -10%;
         margin-bottom: -74.5%;
       }
+
+      img {
+        overflow: hidden;
+        border-radius: 5px;
+        align-self: flex-start;
+        line-height: 0;
+      }
+      @media screen and (min-width: 550px) {
+        main {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        h1 {
+          flex-basis: 100%;
+        }
+        article {
+          flex-basis: 48%;        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        article {
+          display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        articles > div {
+          flex-basis: 48%;
+        }
+        article h2 {
+          margin-top: 0;
+          line-height: 0.7;
+
+          
+        }
+
+     
+      }
+      
+
 
     </style>
   </head>
@@ -96,19 +139,17 @@
       <article>
         <div>
           <img src="./images/dentist1.jpg" alt="Doctor Ladyfingers Photo" />
-
         </div>
-        <div>
-          <h2>Dr Linda LadyFingers Dentist</h2>
-          <h3>Education | Experience</h3>
-          <p>
-            Sometimes horses cough and fart at the same time, so stay out of the
-            range of its butt muscle because a horses butt muscle is thick.I
-            wrestled a bear once. A 750lbs black bear.Listen to the silence. And
-            when the silence is deafening, you're in the center of your own
-            universe.
-          </p>
-
+          <div class="mobile-only">
+            <h2>Dr Linda LadyFingers Dentist</h2>
+            <h3>Education | Experience</h3>
+            <p>
+              Sometimes horses cough and fart at the same time, so stay out of the
+              range of its butt muscle because a horses butt muscle is thick.I
+              wrestled a bear once. A 750lbs black bear.Listen to the silence. And
+              when the silence is deafening, you're in the center of your own
+              universe.
+            </p>
         </div>
         <div>
           <h3>Awards | Achievements</h3>
@@ -125,26 +166,38 @@
             circus clowns in Pensacola, FL. Spent several months supervising the
             production of human growth hormone worldwide.
           </p>
-
+          
         </div>
+        <div class="desktop-only">
+          <h2>Dr Linda LadyFingers Dentist</h2>
+          <h3>Education | Experience</h3>
+          <p>
+            Sometimes horses cough and fart at the same time, so stay out of the
+            range of its butt muscle because a horses butt muscle is thick.I
+            wrestled a bear once. A 750lbs black bear.Listen to the silence. And
+            when the silence is deafening, you're in the center of your own
+            universe.
+          </p>
+
+      </div>
       </article>
 
       <article>
         <div>
           <img src="./images/dentist2.jpg" alt="Doctor Ladyfingers Photo" />
         </div>
-        <div>
-          <h2>Dr Al DiMeola Periodontist</h2>
-          <h3>Education | Experience</h3>
-          <p>
-            Busey ipsum dolor sit amet. Sometimes horses cough and fart at the
-            same time, so stay out of the range of its butt muscle because a
-            horses butt muscle is thick.These kind of things only happen for the
-            first time once.The magic Indian is a mysterious spiritual force, and
-            we're going to Cathedral Rock, and that's the vortex of the heart.
-          </p>
+          <div class="mobile-only">
+            <h2>Dr Al DiMeola Periodontist</h2>
+            <h3>Education | Experience</h3>
+            <p>
+              Busey ipsum dolor sit amet. Sometimes horses cough and fart at the
+              same time, so stay out of the range of its butt muscle because a
+              horses butt muscle is thick.These kind of things only happen for the
+              first time once.The magic Indian is a mysterious spiritual force, and
+              we're going to Cathedral Rock, and that's the vortex of the heart.
+            </p>
+          </div>
 
-        </div>
         <div>
           <h3>Awards | Achievements</h3>
           <ul>
@@ -161,13 +214,25 @@
             Street.
           </p>
         </div>
+        <div class="desktop-only">
+          <h2>Dr Al DiMeola Periodontist</h2>
+          <h3>Education | Experience</h3>
+          <p>
+            Busey ipsum dolor sit amet. Sometimes horses cough and fart at the
+            same time, so stay out of the range of its butt muscle because a
+            horses butt muscle is thick.These kind of things only happen for the
+            first time once.The magic Indian is a mysterious spiritual force, and
+            we're going to Cathedral Rock, and that's the vortex of the heart.
+          </p>
+
+        </div>
       </article>
 
       <article>
         <div>
           <img src="./images/dentist3.jpg" alt="Doctor Ladyfingers Photo" />
         </div>
-        <div>
+        <div class="mobile-only">
           <h2>Dr Toby Mackelmore Oral Surgery</h2>
           <h3>Education | Experience</h3>
           <p>
@@ -192,13 +257,24 @@
             production of human growth hormone worldwide.
           </p>
         </div>
+        <div class="desktop-only">
+          <h2>Dr Toby Mackelmore Oral Surgery</h2>
+          <h3>Education | Experience</h3>
+          <p>
+            Did you feel that? Look at me - I'm not out of breath anymore!You ever
+            roasted doughnuts?Sometimes horses cough and fart at the same time, so
+            stay out of the range of its butt muscle because a horses butt muscle
+            is thick.When you get lost in your imaginatory vagueness, your
+            foresight will become a nimble vagrant.
+          </p>
+        </div>
       </article>
 
       <article>
         <div id="bunnyWrapper">
           <img src="./images/dentist4.jpg" alt="Doctor Ladyfingers Photo" />
         </div>
-        <div>
+        <div class="mobile-only">
           <h2>Dr Steffanie McStuffins Hygiene</h2>
           <h3>Education | Experience</h3>
           <p>
@@ -220,6 +296,16 @@
             exporting beauty for electricians. Spent high school summers training
             circus clowns in Pensacola, FL. Spent several months supervising the
             production of human growth hormone worldwide.
+          </p>
+        </div>
+        <div class="desktop-only">
+          <h2>Dr Steffanie McStuffins Hygiene</h2>
+          <h3>Education | Experience</h3>
+          <p>
+            You ever roasted doughnuts?Have you urinated? Have you drained your
+            bladder? Are you free? Because if you haven't it will only come out
+            later. I'm giving you some information that your bodily fluids may
+            penetrate your clothing fibre's without warning.
           </p>
         </div>
       </article>

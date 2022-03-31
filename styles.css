@@ -1,0 +1,104 @@
+
+/* default styles for the entire document */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+p {
+    font-size: 1rem;
+}
+
+/* > is the direct child selector */
+body > header {
+    display: flex;
+    justify-content: space-between;
+}
+
+body > header nav a {
+    padding: 0.5em 0.8em;
+    font-size: 1.2rem;
+    transition: all 0.4s ease-in-out;
+}
+
+body > header nav a:hover {
+    background-color: rgb(255, 255, 184);
+}
+
+body > header nav a.active {
+    background-color: rgb(223, 223, 98);
+}
+
+body > header nav ul {
+    height: 100%;
+    margin: 0;
+}
+
+body > header nav li {
+    margin-left: 1em;
+}
+
+#siteLogo {
+    max-width: 100px;
+    margin-left: 18px;
+	margin-top: 0.5em;
+	margin-bottom: 0.4em;
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.no-bullets a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    min-height: 500px;
+}
+
+body > footer {
+    background-color: #ceefff;
+    border: 1px solid #ceefff;
+    text-align: center;
+}
+
+.social-media {
+    justify-content: center;
+}
+.social-media li {
+    margin-right: 1em;
+}
+.social-media img {
+    width: 25px;
+}
+
+.footer-menu {
+    justify-content: center;
+}
+.footer-menu li {
+    margin-right: 1.5em;
+}
+
+.footer-menu a:hover {
+    font-weight: bold;
+}
+
